@@ -1,1 +1,1 @@
-thi is mi first commit
+thi is my first commit
