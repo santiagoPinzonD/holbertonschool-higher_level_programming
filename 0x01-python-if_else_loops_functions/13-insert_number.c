@@ -1,5 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * insert_node - insert node
  * @head: pointer
@@ -24,12 +25,22 @@ listint_t *insert_node(listint_t **head, int number)
 		*head = new;
 	else
 	{
-		while ((current->next)->n < number)
+		if (current->n > number)
+		{
+			new->next = current;
+			*head = new;
+			return (new);
+		}
+		while (current->next)
+		{
+			if ((current->next)->n > number)
+			{
+				break;
+			}
 			current = current->next;
+		}
 		new->next = current->next;
 		current->next = new;
-		/*(current->next) = new;*/
-		/*new->next = (current->next)->next;*/
 	}
 	return (new);
 }
