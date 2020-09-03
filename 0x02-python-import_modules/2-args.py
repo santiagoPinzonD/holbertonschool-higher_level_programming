@@ -1,7 +1,10 @@
 #!/usr/bin/python3
 def main():
     import sys
-    print("{} argument:" .format(len(sys.argv)))
+    if len(sys.argv) == 1:
+        print("0 arguments.")
+    else:
+        print("{} argument:" .format(len(sys.argv)))
     for x in range(1, len(sys.argv)):
         print("{:d}: {}" .format(x, sys.argv[x]))
 if __name__ == '__main__':
