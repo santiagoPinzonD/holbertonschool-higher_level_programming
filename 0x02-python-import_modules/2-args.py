@@ -6,7 +6,7 @@ def main():
     if len(sys.argv) == 2:
         print("1 argument:")
     else:
-        print("{} argument:" .format(len(sys.argv)))
+        print("{} argument:" .format(len(sys.argv) - 1))
     for x in range(1, len(sys.argv)):
         print("{:d}: {}" .format(x, sys.argv[x]))
 if __name__ == '__main__':
