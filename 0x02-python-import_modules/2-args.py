@@ -5,7 +5,7 @@ def main():
         print("0 arguments.")
     if len(sys.argv) == 2:
         print("1 argument:")
-    else:
+    if len(sys.argv) > 2:
         print("{} argument:" .format(len(sys.argv) - 1))
     for x in range(1, len(sys.argv)):
         print("{:d}: {}" .format(x, sys.argv[x]))
