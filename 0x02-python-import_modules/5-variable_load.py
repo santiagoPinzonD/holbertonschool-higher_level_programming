@@ -2,4 +2,5 @@
 def main():
     from variable_load_5 import a
     print("{}".format(a))
-main()
+if __name__ == '__main__':
+    main()
