@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+   """This is a class that defina a square"""
 class Square:
-    def cuadr(self):
-        return self ** 2
+    """class empty"""
+    pass
