@@ -5,6 +5,7 @@
 class Square:
     """Class"""
     __size = 0
+
     def __init__(self, size):
         """Private convert"""
         self.__size = size
