@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """function that validate error"""
 
+
 class Square:
     """Class"""
     __size = 0
