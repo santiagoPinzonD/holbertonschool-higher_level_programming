@@ -34,8 +34,9 @@ class Square:
         """print area"""
         if self.__size == 0:
             print()
-        if self.__position[1] > 0:
-            print(" ", end="")
+
+        for x in range(self.__position[1]):
+            print()
         for i in range(0, self.__size):
             for j in range(0, self.__size):
                 print("#", end="")
@@ -48,6 +49,7 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if len(self.__position) is not 2 and type(self.__position) is not int:
+        """Define position"""
+        if len(value) is not 2 or type(value) is not int:
             raise TypeError("position must be a tuple of 2 positive integers")
-        self.position = value
+        self.__position = value
