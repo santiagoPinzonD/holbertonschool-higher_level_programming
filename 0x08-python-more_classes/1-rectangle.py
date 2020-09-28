@@ -2,15 +2,12 @@
 """create"""
 
 
-class Rectangle:
+class Rectangle():
     """create a class called Rectangle"""
-    __width = 0
-    __height = 0
-
     def __init__(self, width=0, height=0):
         """init"""
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
 
     @property
     def width(self):
