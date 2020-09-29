@@ -82,5 +82,4 @@ class Rectangle:
             return rect_1
         if rect1 > rect2:
             return rect_1
-        else:
-            return rect_2
+        return rect_2
