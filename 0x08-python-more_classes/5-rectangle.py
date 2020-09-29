@@ -60,7 +60,7 @@ class Rectangle:
         """print"""
         return 'Rectangle(' + str(self.__width)\
             + ', ' + str(self.__height) + ')'
-    
+
     def __del__(self):
         """del method"""
         print("Bye rectangle...")
