@@ -16,4 +16,4 @@ class Square(Rectangle):
 
     def __str__(self):
         """__str"""
-        return "[Rectangle] " + str(self.__width) + "/" + str(self.__height)
+        return "[Rectangle] " + str(self.__size) + "/" + str(self.__size)
