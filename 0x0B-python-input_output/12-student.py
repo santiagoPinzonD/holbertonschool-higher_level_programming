@@ -11,11 +11,10 @@ class Student():
 
     def to_json(self, attrs=None):
         """tha same that 10"""
+        if attrs is None:
+            return self.__dict__
         list1 = {}
-        if attrs:
-                for k, v in self.__dict__.items():
-                    for x in attrs:
-                        if x == k:
-                            list1[k] = v
-                return list1
-        return self.__dict__
+        for k, v in self.__dict__.items():
+            if k in attrs:
+                list1[k] = v
+        return list1
