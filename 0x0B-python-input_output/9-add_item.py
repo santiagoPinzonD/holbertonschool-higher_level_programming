@@ -15,4 +15,4 @@ if __name__ == '__main__':
 
     if path.exists("add_item.json"):
         list1 = load1("add_item.json")  # load return a list
-        save1(list1 + args, "add_item.json")  # toma una list y la serializa
+    save1(list1 + args, "add_item.json")  # toma una list y la serializa
