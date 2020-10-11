@@ -98,7 +98,6 @@ class Rectangle(Base):
         automatically key/value
         """
         count = 0
-        count1 = 0
         if args:
             for x in args:
                 if count == 0:
