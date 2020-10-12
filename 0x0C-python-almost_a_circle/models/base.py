@@ -86,5 +86,5 @@ class Base():
                 for x in loads:
                     list1 += [cls.create(**x)]
                 return list1
-        except:
-                return []
+        except IOError:
+            return []
