@@ -1,4 +1,5 @@
--- create second table and insert values
+-- create second table and
+-- insert values
 CREATE TABLE IF NOT EXISTS second_table (
     id INT,
     `name` name VARCHAR(256)
