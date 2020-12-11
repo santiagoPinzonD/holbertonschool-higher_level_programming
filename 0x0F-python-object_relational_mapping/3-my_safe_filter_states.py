@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 import MySQLdb
 """ script that list states trought Mysqldb
-""" 
+"""
 
 from sys import argv
 
@@ -15,7 +15,8 @@ if __name__ == "__main__":
 
     db = MySQLdb.connect(host=lc, port=3306, user=userr, passwd=passw, db=namd)
     cur = db.cursor()
-    exe = cur.execute("SELECT * FROM states WHERE name=%s ORDER BY id;", (searched,))
+    exe = cur.execute("SELECT * FROM states WHERE name=%s\
+                    ORDER BY id;", (searched,))
     for x in cur.fetchall():
         print(x)
     db.close()
