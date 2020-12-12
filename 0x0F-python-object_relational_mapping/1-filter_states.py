@@ -18,4 +18,5 @@ if __name__ == "__main__":
     exe = cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id;")
     for x in cur.fetchall():
         print(x)
+    cur.close()
     db.close()
