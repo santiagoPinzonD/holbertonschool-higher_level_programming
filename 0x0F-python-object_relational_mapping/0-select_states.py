@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-import MySQLdb
 """ script that list states
 """
 
+
+import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
@@ -18,4 +19,3 @@ if __name__ == "__main__":
     for x in cur.fetchall():
         print(x)
     db.close()
-    cur.close()
