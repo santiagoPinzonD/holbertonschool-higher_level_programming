@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-import MySQLdb
 """ script that lists all cities and states with left join
 """
 
+
+import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
