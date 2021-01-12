@@ -10,12 +10,12 @@ if __name__ == "__main__":
         q = ""
     else:
         q = sys.argv[1]
-        r = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
+    r = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
     try:
         d = r.json()
         if d == {}:
             print('No result')
         else:
             print("[{}] {}".format(d.get("id"), d.get("name")))
-    except:
+    except ValueError:
         print("Not a valid JSON")
