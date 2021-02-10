@@ -11,11 +11,11 @@ request(url, function (err, response, body) {
   let primero = json[0].userId;
   for (const userd of json) {
     const saveId = userd.userId;
-    if (primero !== userd.userId) {
-      primero = userd.userId;
-      count = 1;
-    }
     if (userd.completed) {
+      if (primero !== userd.userId) {
+        primero = userd.userId;
+	count = 1;
+      }
       dict[saveId] = count++;
     }
   }
