@@ -1,2 +1,2 @@
 #!/usr/bin/node
-document.querySelector("header").style.color = "red";
+document.querySelector('header').style.backgroundColor = '#FF0000';
