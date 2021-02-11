@@ -1,14 +1,14 @@
 #!/usr/bin/node
 $('#toggle_header').click(function () {
-  if (!$('header').hasClass('red', "green"))
+  if (!window.$('header').hasClass('red', "green"))
     {
-      $('header').addClass('green');
+      window.$('header').addClass('green');
     }
-  if ($('header').hasClass('red')) {
-    $('header').removeClass('red');
-    $('header').addClass('green');
+  if (window.$('header').hasClass('red')) {
+    window.$('header').removeClass('red');
+    window.$('header').addClass('green');
   } else {
-    $('header').removeClass('green');
-    $('header').addClass('red');
+    window.$('header').removeClass('green');
+    window.$('header').addClass('red');
   }
 });

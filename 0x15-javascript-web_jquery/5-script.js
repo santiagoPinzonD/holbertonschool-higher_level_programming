@@ -1,4 +1,4 @@
 #!/usr/bin/node
-$('#add_item').click(function () {
-  $('ul.my_list').append('<li>Item</li>');
+window.$('#add_item').click(function () {
+  window.$('ul.my_list').append('<li>Item</li>');
 });
